@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lamp_off" translatesAutoresizingMaskIntoConstraints="NO" id="K4q-jS-EgK">
+                                <rect key="frame" x="28" y="170" width="359" height="556"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuG-4n-fdM">
+                                <rect key="frame" x="113" y="721" width="188" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="ckb-U2-OE3"/>
+                                </constraints>
+                                <state key="normal" title="Flip the Switch"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgz-GK-LXN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Switch App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72q-B5-QHr">
+                                <rect key="frame" x="142" y="82" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K4q-jS-EgK" firstAttribute="centerX" secondItem="DuG-4n-fdM" secondAttribute="centerX" id="2vj-rY-GhU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K4q-jS-EgK" secondAttribute="bottom" constant="136" id="4uM-rz-q3e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DuG-4n-fdM" secondAttribute="bottom" constant="48" id="5YP-u9-nNS"/>
+                            <constraint firstItem="72q-B5-QHr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="VjK-oB-oxV"/>
+                            <constraint firstItem="72q-B5-QHr" firstAttribute="centerX" secondItem="K4q-jS-EgK" secondAttribute="centerX" id="aq7-uD-x5S"/>
+                            <constraint firstItem="DuG-4n-fdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="fDu-TM-vni"/>
+                            <constraint firstItem="K4q-jS-EgK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="fmn-Ri-Dqb"/>
+                            <constraint firstItem="K4q-jS-EgK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j7s-eW-wIj"/>
+                            <constraint firstItem="72q-B5-QHr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kQE-KV-O1W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="K4q-jS-EgK" id="JWp-yy-THo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lamp_off" width="250" height="430"/>
+    </resources>
+</document>
